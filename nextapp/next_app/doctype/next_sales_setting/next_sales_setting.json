@@ -1,0 +1,192 @@
+{
+ "creation": "2019-08-05 19:11:57.186337",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "default_cost_center",
+  "taxes_and_charges",
+  "shipment_fee_account",
+  "bank_transfer_information",
+  "bank_icon",
+  "column_break_5",
+  "using_payment_gateway",
+  "bank_name",
+  "account_no",
+  "holder_name",
+  "default_warehouse",
+  "invoice_setting",
+  "entry_type",
+  "credit_account",
+  "debit_account",
+  "tnc",
+  "term_and_condition",
+  "pb",
+  "pusat_bantuan",
+  "keterangan_ringkasan_belanja",
+  "keterangan_expedisi_lain_lain"
+ ],
+ "fields": [
+  {
+   "fieldname": "taxes_and_charges",
+   "fieldtype": "Link",
+   "label": "Taxes and Charges",
+   "options": "Sales Taxes and Charges Template"
+  },
+  {
+   "fieldname": "shipment_fee_account",
+   "fieldtype": "Link",
+   "label": "Shipment Fee Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "bank_transfer_information",
+   "fieldtype": "Section Break",
+   "label": "Bank Transfer Information"
+  },
+  {
+   "fieldname": "bank_icon",
+   "fieldtype": "Attach Image",
+   "label": "Bank icon"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "using_payment_gateway",
+   "fieldtype": "Check",
+   "label": "Using Payment Gateway"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank name"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No"
+  },
+  {
+   "fieldname": "holder_name",
+   "fieldtype": "Data",
+   "label": "Holder name"
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "invoice_setting",
+   "fieldtype": "Section Break",
+   "label": "Invoice Setting"
+  },
+  {
+   "fieldname": "entry_type",
+   "fieldtype": "Select",
+   "label": "Entry Type",
+   "options": "Journal Entry\nBank Entry\nCash Entry\nCredit Card Entry\nDebit Note\nCredit Note\nContra Entry\nExcise Entry\nWrite Off Entry\nOpening Entry\nDepreciation Entry"
+  },
+  {
+   "fieldname": "credit_account",
+   "fieldtype": "Link",
+   "label": "Credit Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "debit_account",
+   "fieldtype": "Link",
+   "label": "Debit Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "tnc",
+   "fieldtype": "Section Break",
+   "label": "T&C"
+  },
+  {
+   "fieldname": "term_and_condition",
+   "fieldtype": "Text Editor",
+   "label": "Term & Condition"
+  },
+  {
+   "fieldname": "pb",
+   "fieldtype": "Section Break",
+   "label": "Pusat Bantuan"
+  },
+  {
+   "fieldname": "pusat_bantuan",
+   "fieldtype": "Text Editor",
+   "label": "Pusat Bantuan"
+  },
+  {
+   "fieldname": "keterangan_ringkasan_belanja",
+   "fieldtype": "Small Text",
+   "label": "Keterangan Ringkasan Belanja"
+  },
+  {
+   "fieldname": "keterangan_expedisi_lain_lain",
+   "fieldtype": "Small Text",
+   "label": "Keterangan Expedisi Lain-Lain"
+  },
+  {
+   "fieldname": "default_cost_center",
+   "fieldtype": "Link",
+   "label": "Default Cost Center",
+   "options": "Cost Center"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2020-12-02 01:23:12.193091",
+ "modified_by": "Administrator",
+ "module": "Next App",
+ "name": "Next Sales Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Customer",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
